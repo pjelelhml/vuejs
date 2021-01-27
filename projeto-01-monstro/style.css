@@ -1,0 +1,123 @@
+/* Geral */
+
+html {
+    font-family: 'Montserrat', sans-serif
+    ;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Área dos pontos  */
+
+.scores {
+    display: flex
+    ;
+}
+
+.score {
+    /* elemento pode crescer dentro do container */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1 {
+    font-weight: 300;
+    font-size: 1.6rem;
+
+}
+
+.life-bar {
+    width: 80%;
+    height: 20px;
+    border: 1px solid #AAA;
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: green;
+}
+
+.life-bar .life.danger {
+    background-color: red;
+}
+
+/* Área de resultado */
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.result .win {
+    color:green;
+}
+
+.result .lose {
+    color: red;
+}
+
+
+/* Área de controle do jogo */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.new-game {
+    background-color: rgb(0, 42, 255);
+    color: #fff;
+}
+
+.attack {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.special-attack {
+    background-color: rgb(255, 128, 0);
+    color: #000;
+
+}
+
+
+.heal {
+    background-color: rgb(0, 255, 17);
+    color: #fff;
+
+}
+
+.give-up {
+    background-color: #bbb;
+    color: #000;
+}
