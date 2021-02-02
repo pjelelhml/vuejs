@@ -1,7 +1,7 @@
 <template>
   <dive id="app">
     <h1>Contadores</h1>
-    <app-contador></app-contador>
+    <app-contadores></app-contadores>
   </dive>
 </template>
 
