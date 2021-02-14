@@ -41,8 +41,8 @@ export default {
         stockPrice: this.stock.price,
         quantity: this.quantity,
       };
-
-      console.log(order);
+      // dispatch para disparar uma ação
+      this.$store.dispatch("buyStock", order);
       this.quantity = 0;
     },
   },
